@@ -1,0 +1,66 @@
+body {
+    background: lightgrey;
+}
+
+aside {
+    position: fixed;
+    margin: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    max-width: 135px;
+}
+
+.photo {
+    margin-left: 5px;
+    border: 1px solid grey;
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+}
+
+.myname {
+    font-size: 20px;
+    font-weight: 900
+}
+
+main {
+    background: white;
+    border: 1px solid grey;
+    border-radius: 10px;
+    margin-left: 195px;
+    padding: 30px;
+}
+
+.maintitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.maintext {
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 430px) {
+    .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    }
+    .photo {
+    margin: 0px;
+    }
+    aside {
+    display: contents;
+    }
+    .asidecontent{
+	display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    }
+    main {
+	margin: 0px;
+    }
+}
